@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Uday Manchanda
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Uday Manchanda} & Email : {uday.manchanda14@gmail.com}\\
+  {https://umanchanda.github.io} & Mobile : 908-723-7481 \\
+  {https://linkedin.com.com/in/umanchanda} & {https://github.com/umanchanda}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology (NJIT)}{Newark, NJ}
+      {Bachelor of Science in Computer Science;  GPA: 3.46/4.00}{May 2016 -- May 2019 (In progress)}
+    \resumeSubheading
+      {Case Western Reserve University}{Cleveland, Ohio}
+      {Major: Computer Engineering}{Aug 2014 -- May 2016 (Transferred)}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CircleBlack Inc.}{Newark, NJ}
+      {Project Manager: Market Data Feed Automation}{Feb 2019 - May 2019}
+      \resumeItemListStart
+        \resumeItem{Data Collection}
+          {Wrote Python scripts to parse and collect data from Xignite API}
+        \resumeItem{Data Aggregation}
+            {Inserted data into MySQL database hosted on AWS. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Chicago Mercantile Exchange (CME Group)}{New York, NY}
+      {CyberDefense Engineering Operations Intern}{Summers 2017 and 2018}
+      \resumeItemListStart
+        \resumeItem{Responsibilities}
+          {Assisted in maintaining standard operations procedures and documentation. Responded to inquiries on technologies and products such as Riverbed, Guardium, and ArcSight. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Interpublic Group (IPG)}{New York, NY}
+      {Network Security Intern}{May 2016 - December 2016}
+      \resumeItemListStart
+        \resumeItem{Responsibilities}
+        {Implemented Splunk based network intrusion detection system to collect and analyze data from fifty hosts. Assisted in configuring security to enable: data source aggregation, event correlation, and ongoing monitoring. Analyzed alerts reported in Splunk and fine-tuning alert parameters. }
+        \resumeItem{Additional}
+          {Conducted Nessus vulnerability scans on email servers to check for vulnerabilities}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Language Interpreter}{Fall 2017}
+        {https://github.com/umanchanda/language-interpreter}{Language: C++}
+        \resumeItemListStart
+            \resumeItem{Specification}
+            {Performs lexical, syntactic, and semantic analysis while referencing a symbol table from an EBNF grammar and set of semantic rules}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Web Server}{Spring 2018}
+        {https://github.com/umanchanda/webserver}{Language: C}
+        \resumeItemListStart
+            \resumeItem{Specification}
+            {Creates a webserver from scratch in C}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Book Review Web Application}{Winter 2019}
+        {https://umanchandabooks.herokuapp.com}{Technologies: Flask, PostgreSQL, Jinja2}
+        \resumeItemListStart
+            \resumeItem{Specification}{Allows user to create and submit a review for a particular novel. User registration and authentication included. }
+            \resumeItem{Web Scraping}{API Information scraped from Goodreads using Python requests library}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Web Authentication Application}{Spring 2019}
+        {https://github.com/umanchanda/authentication}{Technologies: React.js, Redux.js, Node.js, Express.js, MongoDB}
+        \resumeItemListStart
+            \resumeItem{Specification}{Minimal Javascript Full Stack Web Application with user authentication via passport and JWTs}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, Java, C, SQL, Javascript, C++, LaTeX, R, HTML, CSS}
+    \resumeSubItem{Web Development Technologies}{Flask, Django, React.js, Redux.js, Node.js, Express.js, Gatsby.js, Bootstrap, jQuery}
+    \resumeSubItem{Databases}{SQLite3, MySQL, PostgreSQL, MongoDB, Microsoft SQL Server, GraphQL, Oracle SQL Server}
+    \resumeSubItem{Cloud Computing}{Heroku, AWS}
+    \resumeSubItem{Coursework}{Advanced Data Structures and Algorithms, Programming Language Concepts, Fundamentals of Network Security, Advanced Programming in Linux, Statistical Methods in Data Science}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
